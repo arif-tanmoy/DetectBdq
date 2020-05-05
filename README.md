@@ -8,16 +8,21 @@ The script filters through the VCF file, mapped against *Salmonella* Typhi CT18 
 This VCF file needs to be based on single genome. This script cannot process a merged VCF or a VCF based on multiple genomes.
 
 ## Usage
+```
 python DetectBdq.py --vcf <VCF_file> --phred_cutoff <MINIMUM_PHRED_QUALITY> --output <OUTPUT_File>
+```
 
 ## Options
 #### Required Options
+```
 --vcf         VCF file of single isolate, mapped against *Salmonella* Typhi CT18.
+```
 
 #### Specific options
+```
 --phred_cutoff          Minimum Phred Quality (default 20)
-
 --output            Output file (default: Bdq_detect.txt)
+```
 
 ## Output
 The script calculates the proportion of reads for each of the SNP position. As the genotype 4.3.1.3q1 relies on four different SNPs, this script also calculates the median read_proportion value.
