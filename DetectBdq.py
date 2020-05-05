@@ -1,9 +1,9 @@
 '''
-A SIMPLE SCRIPT TO DETECT Bdq LINEAGE (4.3.1.3q1) of Salmonella Typhi
-Takes VCF file as input, needs to be one-isolate-VCF (do not support multi-isolate-VCF or merged_VCF).
-Test VCF file was generated using bowtie2-samtools-bcftools.
+A SIMPLE SCRIPT TO DETECT Bdq Lineage (4.3.1.3q1) of *Salmonella* Typhi
+It takes VCF file as input, needs to be one-isolate-VCF (do not support multi-isolate-VCF or merged_VCF).
+Test_VCF file was generated using bowtie2-samtools-bcftools.
 
-USE: python DetectBdq.py --vcf <VCF_file> --phred_cutoff <MINIMUM_PHRED_QUALITY> --output <OUTPUT_File>
+USE: python DetectBdq.py --vcf <VCF_file> --phred_cutoff <Minimum_Phred_Score> --output <Output_file>
 '''
 
 from argparse import (ArgumentParser, FileType)
