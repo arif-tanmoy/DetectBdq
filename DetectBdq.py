@@ -1,5 +1,5 @@
 '''
-A SIMPLE SCRIPT TO DETECT Bdq Lineage (4.3.1.3q1) of *Salmonella* Typhi
+A simple script to detect Bdq Lineage (4.3.1.3q1) of Salmonella enterica serovar Typhi
 It takes VCF file as input, needs to be one-isolate-VCF (do not support multi-isolate-VCF or merged_VCF).
 Test_VCF file was generated using bowtie2-samtools-bcftools.
 
